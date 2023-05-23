@@ -34,7 +34,7 @@ const validateSINInput = (sin) => {
       //add multipliedDigit to the total sum
       sum += multipliedDigit;
     } else {
-      sum += digit;
+      sum += digit; //every odd element can be added to total sum
     }
   }
 
