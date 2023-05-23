@@ -5,7 +5,7 @@ This program reads a single command line argument representing a candidate SIN n
 
 ## Setup
 
-1. Install the zip file
+1. Download the zip file
 2. Run 'node main.js'
 3. Please enter a SIN number and press enter.
 
