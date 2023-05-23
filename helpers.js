@@ -1,5 +1,5 @@
 const validateInput = (sin) => {
-  sin = sin.replace(/\s+/g, ""); //remove whitespace if any
+  sin = sin.replace(/\s+/g, ""); //use regex to remove whitespace if any
 
   //ensure SIN is 9 digits long
   if (sin.length !== 9) {
