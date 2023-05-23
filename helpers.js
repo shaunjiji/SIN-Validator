@@ -1,7 +1,7 @@
 const validateInput = (sin) => {
   sin = sin.replace(/\s+/g, ""); //use regex to remove whitespace if any
 
-  //ensure SIN is 9 digits long
+  //ensure input is 9 digits long
   if (sin.length !== 9) {
     console.log("SIN must only be 9 digits long");
     return false;
@@ -14,7 +14,7 @@ const validateInput = (sin) => {
 };
 
 const validateSINInput = (sin) => {
-  let sum = 0; //create variable sum to keep track of total sum
+  let sum = 0; //create variable called sum to keep track of total sum
 
   //iterate through string
   for (let i = 0; i < 9; i++) {
@@ -31,7 +31,7 @@ const validateSINInput = (sin) => {
           Math.floor(multipliedDigit / 10) + (multipliedDigit % 10);
         //multipliedDigit / 10 will always be 1, multipliedDigit % 10 will be the second digit
       }
-      //sum
+      //add multipliedDigit to the total sum
       sum += multipliedDigit;
     } else {
       sum += digit;
